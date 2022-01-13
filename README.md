@@ -1,5 +1,5 @@
-## Go Code
-Miscellaneous apps I am developing using the Go programming language. 
+## Golang
+Miscellaneous apps I am developing using the Go programming language (otherwise known as "Golang"). 
 
 **How to Install Go**
 ```bash
