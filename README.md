@@ -1,5 +1,5 @@
 ## Golang
-This is a repository of miscellaneous apps I am developing using the Go programming language (otherwise known as "Golang"). This README.md file will also serve as my personal Golang cheat-sheet. 
+This is a repository of miscellaneous apps I am developing using the Go programming language (otherwise known as "Golang"). This README.md file also serves as my personal Golang cheat-sheet. 
 
 **How to Install Go on a Debian Linux-based System**
 ```bash
