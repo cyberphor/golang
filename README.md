@@ -27,3 +27,6 @@ Go for Windows
 
 gVim (a text-editor) for Windows  
 [https://ftp.nluug.nl/pub/vim/pc/gvim82.exe](https://ftp.nluug.nl/pub/vim/pc/gvim82.exe)
+
+Git for Windows  
+[https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe)
