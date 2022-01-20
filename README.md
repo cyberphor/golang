@@ -19,3 +19,10 @@ func main() {
     }
 }
 ```
+
+## Resources
+Go for Windows  
+[https://go.dev/dl/](https://go.dev/dl/)
+
+gVim (a text-editor) for Windows  
+[https://ftp.nluug.nl/pub/vim/pc/gvim82.exe](https://ftp.nluug.nl/pub/vim/pc/gvim82.exe)
