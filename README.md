@@ -4,6 +4,7 @@ This is a repository of miscellaneous apps I am developing using the Go programm
 
 ### Table of Contents
 * [defer](#defer)
+* [type](#type)
 
 **How to Install Go on a Debian Linux-based System**
 ```bash
@@ -63,6 +64,30 @@ func HashPassword(text string) string {
 
 ### defer
 Use the defer expression to execute something, but only after the parent function executes first. One example is closing the connection to a database within a function that parses the results of a database query.
+
+### type
+```go
+package main
+
+import "fmt"
+
+func main() {
+	type PersonData struct {
+		FirstName string
+		LastName  string
+	}
+
+	Person := PersonData{
+		FirstName: "Victor",
+		LastName:  "Fernandez",
+	}
+
+	fmt.Println(Person)
+	fmt.Println(Person.FirstName)
+	fmt.Println(Person.LastName)
+}
+```
+
 
 ## Resources
 Go for Windows  
