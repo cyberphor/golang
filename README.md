@@ -2,6 +2,9 @@
 This is a repository of miscellaneous apps I am developing using the Go programming language (otherwise known as "Golang"). This README.md file also serves as my personal Golang cheat-sheet.  
 ![gopher.png](/gopher.png)  
 
+### Table of Contents
+* [defer](#defer)
+
 **How to Install Go on a Debian Linux-based System**
 ```bash
 sudo apt update
@@ -57,6 +60,9 @@ func HashPassword(text string) string {
     return hex.EncodeToString(hash[:])
 }
 ```
+
+### defer
+Use the defer expression to execute something, but only after the parent function executes first. One example is closing the connection to a database within a function that parses the results of a database query.
 
 ## Resources
 Go for Windows  
