@@ -49,7 +49,7 @@ import (
 ```go
 import (
     "crypto/md5"
-	"encoding/hex"
+    "encoding/hex"
 )
 
 func HashPassword(text string) string {
