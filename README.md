@@ -45,6 +45,19 @@ import (
 **Importing sqlite3**  
 ![mingw-64](/mingw-64.png)
 
+## Functions
+```go
+import (
+    "crypto/md5"
+	"encoding/hex"
+)
+
+func HashPassword(text string) string {
+	hash := md5.Sum([]byte(text))
+	return hex.EncodeToString(hash[:])
+}
+```
+
 ## Resources
 Go for Windows  
 [https://go.dev/dl/](https://go.dev/dl/)
