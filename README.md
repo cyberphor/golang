@@ -88,6 +88,19 @@ func main() {
 }
 ```
 
+### Returning Multiple Values
+Declare the type first. When declaring your function, specify the type it will return. 
+```go
+type UserData struct {
+    // code goes here
+}
+
+func GetUsers() []UserData {
+    var Users []UserData
+    // code goes here; ex: Users = append(Users, User)
+    return Users
+}
+```
 
 ## Resources
 Go for Windows  
