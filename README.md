@@ -102,6 +102,13 @@ func GetUsers() []UserData {
 }
 ```
 
+```go
+for _, player := range read.Players() {
+    fmt.Println(player.Username)
+    fmt.Println(player.Password)
+}
+```
+
 ## Resources
 Go for Windows  
 [https://go.dev/dl/](https://go.dev/dl/)
