@@ -1,33 +1,16 @@
 package main
 
 import (
-	"html/template"
+	"net/http"
+
+	"github.com/cyberphor/demo/controllers"
 )
 
-/* demo1
 func main() {
-	http.HandleFunc("/", Browse)
-	http.HandleFunc("/index.html", Index)
-	http.HandleFunc("/login", Login)
-	http.ListenAndServe(":8888", nil)
-}
-*/
-
-type Page struct {
-	Title template.HTML
-	Body  template.HTML
-}
-
-func main() {
-	t, err := template.ParseFiles("template.gohtml")
-	if err != nil {
-		panic(err)
-	}
-
-	page := Page{
-		Title: "Welcome",
-		Body:  template.HTML(iouti.ReadFile("")),
-	}
-
-	err
+	filePath := http.Dir("./views/")
+	fileServer := http.FileServer(filePath)
+	http.Handle("/static/", fileServer)
+	http.HandleFunc("/", controllers.LoginPage)
+	http.HandleFunc("/login", controllers.Login)
+	http.ListenAndServe(":8000", nil)
 }
