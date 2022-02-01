@@ -102,6 +102,7 @@ func GetUsers() []UserData {
 }
 ```
 
+### For Loop
 ```go
 for _, player := range read.Players() {
     fmt.Println(player.Username)
