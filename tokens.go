@@ -18,10 +18,11 @@ type Claims struct {
 func CookiePage(w http.ResponseWriter, r *http.Request) {
 	tokenString, expires, err := CreateToken("victor", "user")
 	if err != nil {
-		w.Write([]byte("Hello world!"))
+		http.Error(w, "Server error.", http.StatusInternalServerError)
+		return
 	}
 	http.SetCookie(w, &http.Cookie{Name: "token", Value: tokenString, Expires: expires})
-	w.Write([]byte("Hello victor!"))
+	w.Write([]byte("Hello to the cookie jar!"))
 }
 
 func IndexPage(w http.ResponseWriter, r *http.Request) {
@@ -74,7 +75,7 @@ func main() {
 	CookiePageHandler := http.HandlerFunc(CookiePage)
 	ScoreboardPageHandler := http.HandlerFunc(ScoreboardPage)
 	mux.Handle("/", IndexPageHandler)
-	mux.Handle("/cookie.html", CookiePageHandler)
+	mux.Handle("/cookiejar.html", CookiePageHandler)
 	mux.Handle("/scoreboard.html", VerifyToken(ScoreboardPageHandler))
 	http.ListenAndServe(":666", mux)
 }
